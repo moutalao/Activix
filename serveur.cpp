@@ -22,7 +22,7 @@ Serveur::Serveur(QWidget *parent) :
     modele= new QStandardItemModel(0,0);
     construireVue(); m_ui->boiteRapport->hide(); openConfig(); initialiserCryptage();
 
-
+    m_ui->connect->click();
     connect(m_ui->dossier, SIGNAL(clicked(QModelIndex)),this,SLOT(selection()));
 }
 
